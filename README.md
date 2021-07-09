@@ -10,6 +10,9 @@ A new Flutter p go project.
 - https://github.com/golang/mobile/
 - https://pkg.go.dev/golang.org/x/mobile/cmd/gobind
 
+文件选择:
+- https://gitee.com/jrnet/flutter_file_selector
+
 ## Getting Started
 
 This project is a starting point for a Flutter

@@ -3,9 +3,11 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:hello_pgo/hello_pgo.dart';
+import 'package:hello_pgo_example/pages/filePicker.dart';
+
 
 void main() {
-  runApp(MyApp());
+  runApp(FilePickerDemo());
 }
 
 class MyApp extends StatefulWidget {
@@ -70,23 +72,22 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(child: Column(
-          children:[
-          Text('Running on: $_platformVersion\n'),
-          Text('$_platformHelloStr\n'),
-          ElevatedButton(onPressed:  initHelloNum, child: Text('Hello'))
-          ],
-        ),
-        )
-      ),
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
+          ),
+          body: Center(
+            child: Column(
+              children: [
+                Text('Running on: $_platformVersion\n'),
+                Text('$_platformHelloStr\n'),
+                ElevatedButton(onPressed: initHelloNum, child: Text('Hello'))
+              ],
+            ),
+          )),
     );
   }
 }
